@@ -1,6 +1,6 @@
 # Gitting started
 
-One member of your team is going to create a repo on GitHub. This person is your git master and will have addtional responsibilities. Your going to have GitHub generate a `.gitignore` for Python. Next you're going to need to add every other team member as a collaborator. You can find this under `Settings -> Manage acess -> Add people`.
+One member of your team is going to create a repo on GitHub. This person is your git master and will have additional responsibilities. Your going to have GitHub generate a `.gitignore` for Python. Next you're going to need to add every other team member as a collaborator. You can find this under `Settings -> Manage access -> Add people`.
 
 Now before everyone starts cloning one person should clone the repo to fix the `.gitignore` a bit. Specifically we want to add the following line: `.DS_Store`. The following commands will do this for you:
 ```
@@ -25,7 +25,7 @@ Now your ready to start working with your group. Theres more than one valid git 
 
 ## Structure
 
-The main branch is where completed tasks live. Each task in progress will have its own branch (potentially more, if you find it helpful). No branch should have mutliple people working on it at a time. If two people are working on the same thing then either only one is making code changes or there is a branch for each person working on the task. An example repo might look something like the following.
+The main branch is where completed tasks live. Each task in progress will have its own branch (potentially more, if you find it helpful). No branch should have multiple people working on it at a time. If two people are working on the same thing then either only one is making code changes or there is a branch for each person working on the task. An example repo might look something like the following.
 
 branch | description
 --|--
@@ -38,8 +38,7 @@ branch | description
 
 ## Using the structure
 
-First I'm going to go into my git repo and open a terminal. Lets say I want to start work on my
-
+First, I'm going to go into my git repo and open a terminal. Lets say I want to start work on my ##finish this sentence
 
 # Examples
 
@@ -57,7 +56,7 @@ git push
 The push is not strictly required, but no reason not to do it.
 
 ### Important to do before switching branches
-**Make sure you don't switch branches with uncommited work!** Anytime, before you do a `git checkout` command (which we will be seeing a lot of in the following examples) you should **always** check that you do not have uncommited work. You can check to see if you have uncommited work by running
+**Make sure you don't switch branches with uncommitted work!** Anytime, before you do a `git checkout` command (which we will be seeing a lot of in the following examples) you should **always** check that you do not have uncommitted work. You can check to see if you have uncommitted work by running
 ```
 git status
 ```
@@ -78,3 +77,6 @@ git push --set-upstream origin <new_branch_name>
 ```
 
 ### Starting 
+
+
+##Good start. I would state later on that `git checkout -b <branch>` is only used the first time. Every subsequent checkout of the existing branch is `git checkout <branch>`
