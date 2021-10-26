@@ -1,5 +1,3 @@
-Guide to working using git for good.
-
 # Gitting started
 
 One member of your team is going to create a repo on GitHub. This person is your git master and will have addtional responsibilities. Your going to have GitHub generate a `.gitignore` for Python. Next you're going to need to add every other team member as a collaborator. You can find this under `Settings -> Manage acess -> Add people`.
@@ -43,8 +41,6 @@ branch | description
 First I'm going to go into my git repo and open a terminal. Lets say I want to start work on my
 
 
-
-
 # Examples
 
 The following instructions all assume you're in the local git repo.
@@ -78,6 +74,7 @@ then you are good. If you do have uncommited work, then you need to either commi
 ```
 git checkout main
 git checkout -b <new_branch_name>
+git push --set-upstream origin <new_branch_name>
 ```
 
 ### Starting 
