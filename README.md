@@ -25,7 +25,7 @@ Now your ready to start working with your group. Theres more than one valid git 
 
 ## Structure
 
-The main branch is where completed tasks live. Each task in progress will have its own branch (potentially more, if you find it helpful). No branch should have multiple people working on it at a time. If two people are working on the same thing then either only one is making code changes or there is a branch for each person working on the task. An example repo might look something like the following.
+The main branch is where completed tasks live. Each task in progress will have its own branch (potentially more, if you find it helpful). No branch should have multiple people working on it at a time. If two people are working on the same thing then either only one is making code changes or there is a branch for each person working on the task. An example repo might look something like the following:
 
 branch | description
 --|--
@@ -34,11 +34,31 @@ branch | description
 `feature/cleaning-data-inputs` | We have multiple people working on this task so we're going to use this as a sort of master copy for this work.
 `feature/cleaning-data-inputs/benji` | Here's where Benji's making his contributions to this.
 `feature/cleaning-data-inputs/stephen` | Here's where Stephen's making his contributions to this.
-`stretch/automated-email-list` | Here's where Farshad went of on a tanget and started making an automated email list. This probably won't make it into the final project but its good work and we don't want to throw it away. Maybe we'll finish it and include it in the end.
+`stretch/automated-email-list` | Here's where Farshad went on on a tangent and started making an automated email list. This probably won't make it into the final project but its good work and we don't want to throw it away. Maybe we'll finish it and include it in the end.
 
+
+The above structure uses folders to keep each branch organized. All branches working on a feature are in the `feature` folder, etc... For the purposes of your project, folders aren't necessary. However, it would be a good habit to start practicing.
 ## Using the structure
 
-First, I'm going to go into my git repo and open a terminal. Lets say I want to start work on my ##finish this sentence
+First, I'm going to go into my git repo and open a terminal. Lets say I want to start work on a new branch in the `feature` folder.
+
+```
+cd <repo>
+git checkout -b feature/my_new_branch
+git push --set-upstream origin <new_branch_name>
+```
+
+I am now working on the `my_new_branch` branch inside of the `feature` folder. Any changes I make in this branch won't be applied to the main repository until I make a Pull Request.
+
+One good rule of thumb is to always run `git pull` whenever any changes to the main repository are merged.
+
+```
+git checkout main
+git pull
+git checkout feature/my_new_branch
+```
+
+The three steps above had me switch back to the main repository, pull down the new changes, and then change back into the branch I was working on. Notice that I didn't use the `-b` option. This only has to be done **once** when first creating the branch.
 
 # Examples
 
@@ -64,7 +84,7 @@ and if you see:
 ```
 nothing to commit, working tree clean
 ```
-then you are good. If you do have uncommited work, then you need to either commit the changes or undo the changes before branching.
+then you are good. If you do have uncommitted work, then you need to either commit the changes or undo the changes before branching.
 
 ---
 
@@ -76,7 +96,7 @@ git checkout -b <new_branch_name>
 git push --set-upstream origin <new_branch_name>
 ```
 
-### Starting 
-
-
-##Good start. I would state later on that `git checkout -b <branch>` is only used the first time. Every subsequent checkout of the existing branch is `git checkout <branch>`
+### Git best practices
+* Never have two people work on the same file at the same time. This will cause merge conflicts later on.
+* Always run a `git pull` before creating a new branch to pull down the latest changes.
+* For some of you, this will be the first time you collaborate on a Git repository. To avoid problems, only have one Pull Request open at a time and make sure everyone runs `git pull` after the changes are merged.
