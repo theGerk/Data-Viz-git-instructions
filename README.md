@@ -27,7 +27,7 @@ Now your ready to start working with your group. Theres more than one valid git 
 
 ## Structure
 
-The main branch is where completed tasks live. Each task in progress will have its own branch (potentially more, if you find it helpful). No branch should have multiple people working on it at a time. If two people are working on the same thing then either only one is making code changes or there is a branch for each person working on the task. An example repo might look something like the following.
+The main branch is where completed tasks live. Each task in progress will have its own branch (potentially more, if you find it helpful). No branch should have multiple people working on it at a time. If two people are working on the same thing then either only one is making code changes or there is a branch for each person working on the task. An example repo might look something like the following:
 
 branch | description
 --|--
@@ -37,6 +37,8 @@ branch | description
 `feature/cleaning-data-inputs/benji` | Here's where Benji's making his contributions to this.
 `feature/cleaning-data-inputs/stephen` | Here's where Stephen's making his contributions to this.
 
+
+The above structure uses folders to keep each branch organized. All branches working on a feature are in the `feature` folder, etc... For the purposes of your project, folders aren't necessary. However, it would be a good habit to start practicing.
 ## Using the structure
 
 First, I'm going to go into my git repo and open a terminal. Lets say I want to start work on a new feature (lets say `feature/something-cool`). I'm going to make sure all my work is commited before I change branches ([see](###-Making-a-commit)), then I make sure I'm on the `main` branch (`git checkout main`) and that my main branch is up to date (`git pull`). Now I can create my new branch from main `git checkout -b feature/something-cool`. Now I can start working on my feature.
@@ -86,7 +88,7 @@ and if you see:
 ```
 nothing to commit, working tree clean
 ```
-then you are good. If you do have uncommited work, then you need to either commit the changes or undo the changes before branching.
+then you are good. If you do have uncommitted work, then you need to either commit the changes or undo the changes before branching.
 
 ---
 
