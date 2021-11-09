@@ -33,7 +33,7 @@ branch | description
 --|--
 `main` | This is where all completed work lives.
 `feature/setup-api-calls` | This where David is working on getting the API calls working. *In this case David is the only person writing code for this task.*
-`feature/cleaning-data-inputs` | We have multiple people working on this task so we're going to use this as a sort of master copy for this work.
+`feature/cleaning-data-inputs/main` | We have multiple people working on this task so we're going to use this as a sort of master copy for this work.
 `feature/cleaning-data-inputs/benji` | Here's where Benji's making his contributions to this.
 `feature/cleaning-data-inputs/stephen` | Here's where Stephen's making his contributions to this.
 
@@ -62,7 +62,7 @@ Here you might get a merge conflict, and again call a TA to help.
 
 It is possible to delete branches, I don't recommend doing that for this project. The danger with deleting branches is that you risk making a mistake and really messing yourself up and you don't get any advantage from it.
 
-**Optional**: You can treat the above workflow the same way with a different main and different git boss. Consider the table of branches above and look at `feature/cleaning-data-inputs`, `feature/cleaning-data-inputs/benji` and `feature/cleaning-data-inputs/stephen`. In that case when Stephen and Benji are working on their branches, whenever they want to say they are done with a step then they'll have one of them act as the git boss and use `feature/cleaning-data-inputs` as the main. The git boss won't change between, if Benji is the git boss for `feature/cleaning-data-inputs` then he'll stay that way to save from confusion. Further when Benji and Stephen want to share something they have with the rest of the group they will first use this strategy to make sure `feature/cleaning-data-inputs` is up to where they want it to be, then the'll ask the real git boss to merge from `feature/cleaning-data-inputs` to main.
+**Optional**: You can treat the above workflow the same way with a different main and different git boss. Consider the table of branches above and look at `feature/cleaning-data-inputs/main`, `feature/cleaning-data-inputs/benji` and `feature/cleaning-data-inputs/stephen`. In that case when Stephen and Benji are working on their branches, whenever they want to say they are done with a step then they'll have one of them act as the git boss and use `feature/cleaning-data-inputs/main` as the main. The git boss won't change between, if Benji is the git boss for `feature/cleaning-data-inputs/main` then he'll stay that way to save from confusion. Further when Benji and Stephen want to share something they have with the rest of the group they will first use this strategy to make sure `feature/cleaning-data-inputs/main` is up to where they want it to be, then the'll ask the real git boss to merge from `feature/cleaning-data-inputs/main` to `main`.
 
 # Examples
 
