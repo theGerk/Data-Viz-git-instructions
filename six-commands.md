@@ -1,5 +1,7 @@
 # git concepts
 
+## git vs github
+git is to GitHub what videos are to YouTube.
 
 ## commit
 A commit is the smallest unit that git keeps track of. I think of it as a "version" of your project. Each time you make a commit that is a place you could go back to at any time in the future. All commits are save perminantly in the git history.
@@ -18,7 +20,7 @@ Pull requests (PR for short) are a common feature built into git hosting service
 - `git add .` or `git add -A`
 - `git commit -m "<message>"`
 - `git push` and `git pull`
-- `git clone`
+- `git clone <url>`
 - `git checkout <branch_name>` and `git checkout -b <branch_name>`
 - `git merge <branch_name>`
 
@@ -38,7 +40,7 @@ Techincally you don't need to do these three commands together, there really isn
 ---
 Sometimes github has changes that you don't have locally. This can often happen when two people are working on the same branch (which we won't be doing for the project) or if you switch which computer your working on. This will also happen when you need changes from a branch someone else has been working on. This will just pull all the changes (commits) for the current branch's remote version into your local.
 
-## `git clone`
+## `git clone <url>`
 ---
 This gets a repo that exists remotely (on github for example) onto your local machine. It makes a new folder and populates the repo in there. You can run `git clone <folder_name>` to name that folder it creates something you choose.
 
